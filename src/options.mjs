@@ -1,6 +1,16 @@
 const CATEGORY_PHP = "PHP";
 
 export default {
+  parserVersion: {
+    since: "0.13.0",
+    category: CATEGORY_PHP,
+    type: "choice",
+    default: 830,
+    description: "Minimum target PHP version.",
+    choices: [
+      { value: 830 },
+    ],
+  },
   phpVersion: {
     since: "0.13.0",
     category: CATEGORY_PHP,
